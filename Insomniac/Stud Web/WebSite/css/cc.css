@@ -1,0 +1,63 @@
+/* Titile */
+
+.brand-custom
+{
+    font-family: 'Libre Barcode 39 Text', cursive;
+    color: #3a3535;
+    font-size: 30px;
+}
+
+.navbar-custom
+{
+    background-color: #ff7315;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.titleDiv
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #3a3535;
+}
+
+.titleText
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff7315;
+    font-size: 70px;
+    text-align: center;
+}
+
+.titleDescText
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px 10px 50px;
+    font-size: 20px;
+}
+
+.titleDescText1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px 10px 50px;
+    font-size: 22px;
+}
+
+.optionS
+{
+    background-color: #ff7315;
+}
+
+.option
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.option123
+{
+    font-size: 30px;
+    color: #3a3535;
+}

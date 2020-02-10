@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Barcode+39+Text|Quicksand:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <title>Stud: :Web</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <section id="title">
+      <div class="navbarDiv">
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+          <a class="navbar-brand brand-custom" href="index.html"><b>Stud::Web</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">Announcements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+        <div class="titleDiv">
+          <div class="row">
+
+            <div class="col-lg-6 titleColText">
+              <h1 class="titleText">The Web of Students.</h1>
+              <button type="button" class="btn signbtn btn-lg"><i class="fab fa-apple"></i> Login</button>
+            </div>
+            <div class="col-lg-l6">
+              <img class="studImg" src="images/student.png" alt="Student">
+            </div>
+          </div>
+          <div class="titleDesc">
+            <h1 class="titleDescText">One Stop for Everything.</h1>
+          </div>
+          <div class="titleQuote">
+            <h1>Perseverance is the hard work you do after you get tired of doing the hard work you already did.</h1>
+          </div>
+        </div>
+    </section>
+
+    <!-- Option -->
+
+    <section id="Option">
+      <div class="row">
+        <div class="col-lg-8 CP">
+          <a href="cc.html" class="CPLink">Competitive Programming</a>
+        </div>
+        <div class="col-lg-4 WS">
+          <a href="CS.html" class="WSLink">Cyber Security</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ML">
+          <a href="ml.html" class="MLLink">Machine Learning</a>
+        </div>
+        <div class="col-lg-8 DES">
+          <a href="des.html" class="DESLink">Design UI/UX</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 WD">
+          <a href="wd.html" class="WDLink">Web Development</a>
+        </div>
+        <div class="col-lg-4 AD">
+          <a href="ad.html" class="ADLink">App Development</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section id="Footer">
+      <div class="footer">
+        <a href="#" class="footerWWH">What?</a>
+        <a href="#" class="footerWWH">Why?</a>
+        <a href="#" class="footerWWH">How?</a>
+        <p class="copyright">© Insomniac</p>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJpwpObD2B4oQI0lj6Lc8y4nzFRx3PoOs",
+    authDomain: "login-c0aa6.firebaseapp.com",
+    databaseURL: "https://login-c0aa6.firebaseio.com",
+    projectId: "login-c0aa6",
+    storageBucket: "login-c0aa6.appspot.com",
+    messagingSenderId: "699550182649",
+    appId: "1:699550182649:web:2421b74a025be236d80628",
+    measurementId: "G-4DDPYD7GHW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  </body>
+</html>
